@@ -1,0 +1,221 @@
+/* styles.css */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 0px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  
+  .logo img {
+    height: 40px; /* Adjust the height as per your logo dimensions */
+  }
+  
+  .logo a {
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+/* Hero Section */
+#hero {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px;
+
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Services Section */
+#services {
+  background-color: #fff;
+  padding: 50px;
+}
+
+#services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 300px;
+  margin-right: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+#testimonials h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form .btn {
+  padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablets and smaller screens */
+  
+  .container {
+    padding: 10px;
+  }
+  .logo img {
+    height: 30px; /* Adjust the height as per your logo dimensions */
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  #hero {
+    padding: 30px;
+  }
+  
+  .btn {
+    font-size: 14px;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+}
